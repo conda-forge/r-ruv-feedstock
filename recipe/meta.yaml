@@ -1,4 +1,4 @@
-{% set version = '0.9.7' %}
+{% set version = '0.9.7.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ruv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ruv/ruv_{{ version }}.tar.gz
-  sha256: 45feaf7bd81ecc32700d25c8586c2d6868258da23fd6ba14d2e47c9dbaaaddfa
+  sha256: a0c54e56ba3d8f6ae178ae4d0e417a79295abf5dcb68bbae26c4b874734d98d8
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,18 +47,19 @@ test:
 
 about:
   home: http://www-personal.umich.edu/~johanngb/ruv/
-  license: GPL
-  summary: 'Implements the ''RUV'' (Remove Unwanted Variation) algorithms.  These algorithms
-    attempt to adjust for systematic errors of unknown origin in high-dimensional data.  The
+  license: GPL-3
+  summary: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt
+    to adjust for systematic errors of unknown origin in high-dimensional data.  The
     algorithms were originally developed for use with genomic data, especially microarray
     data, but may be useful with other types of high-dimensional data as well.  These
-    algorithms were proposed by Gagnon-Bartsch and Speed (2012), and by Gagnon-Bartsch,
-    Jacob and Speed (2013).  The algorithms require the user to specify a set of negative
-    control variables, as described in the references.  The algorithms included in this
-    package are ''RUV-2'', ''RUV-4'', ''RUV-inv'', ''RUV-rinv'', ''RUV-I'', and RUV-III'',
-    along with various supporting algorithms.  '
-  license_family: GPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    algorithms were proposed in Gagnon-Bartsch and Speed (2012) <doi:10.1093/nar/gkz433>,
+    Gagnon-Bartsch, Jacob and Speed (2013), and Molania, et. al. (2019) <doi:10.1093/nar/gkz433>.  The
+    algorithms require the user to specify a set of negative control variables, as described
+    in the references.  The algorithms included in this package are 'RUV-2', 'RUV-4',
+    'RUV-inv', 'RUV-rinv', 'RUV-I', and RUV-III', along with various supporting algorithms.
+  license_family: GPL3
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
@@ -69,9 +70,9 @@ extra:
 
 # Package: ruv
 # Title: Detect and Remove Unwanted Variation using Negative Controls
-# Description: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt to adjust for systematic errors of unknown origin in high-dimensional data.  The algorithms were originally developed for use with genomic data, especially microarray data, but may be useful with other types of high-dimensional data as well.  These algorithms were proposed by Gagnon-Bartsch and Speed (2012), and by Gagnon-Bartsch, Jacob and Speed (2013).  The algorithms require the user to specify a set of negative control variables, as described in the references.  The algorithms included in this package are 'RUV-2', 'RUV-4', 'RUV-inv', 'RUV-rinv', 'RUV-I', and RUV-III', along with various supporting algorithms.
-# Version: 0.9.7
-# Date: 2018-03-12
+# Description: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt to adjust for systematic errors of unknown origin in high-dimensional data.  The algorithms were originally developed for use with genomic data, especially microarray data, but may be useful with other types of high-dimensional data as well.  These algorithms were proposed in Gagnon-Bartsch and Speed (2012) <doi:10.1093/nar/gkz433>, Gagnon-Bartsch, Jacob and Speed (2013), and Molania, et. al. (2019) <doi:10.1093/nar/gkz433>.  The algorithms require the user to specify a set of negative control variables, as described in the references.  The algorithms included in this package are 'RUV-2', 'RUV-4', 'RUV-inv', 'RUV-rinv', 'RUV-I', and RUV-III', along with various supporting algorithms.
+# Version: 0.9.7.1
+# Date: 2019-08-30
 # Imports: stats, ggplot2, scales, gridExtra
 # Suggests: shiny, colourpicker
 # Author: Johann Gagnon-Bartsch <johanngb@umich.edu>
@@ -80,6 +81,6 @@ extra:
 # URL: http://www-personal.umich.edu/~johanngb/ruv/
 # LazyLoad: yes
 # NeedsCompilation: yes
-# Packaged: 2018-03-12 16:46:57 UTC; johann
+# Packaged: 2019-08-30 20:08:45 UTC; johanngb
 # Repository: CRAN
-# Date/Publication: 2018-03-12 19:19:17 UTC
+# Date/Publication: 2019-08-30 21:50:02 UTC
