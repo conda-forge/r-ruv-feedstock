@@ -3,7 +3,7 @@ About r-ruv
 
 Home: http://www-personal.umich.edu/~johanngb/ruv/
 
-Package license: GPL-3
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ruv-feedstock/blob/master/LICENSE.txt)
 
