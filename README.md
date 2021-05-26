@@ -3,13 +3,11 @@ About r-ruv
 
 Home: http://www-personal.umich.edu/~johanngb/ruv/
 
-Package license: GPL-3
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ruv-feedstock/blob/master/LICENSE.txt)
 
 Summary: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt to adjust for systematic errors of unknown origin in high-dimensional data.  The algorithms were originally developed for use with genomic data, especially microarray data, but may be useful with other types of high-dimensional data as well.  These algorithms were proposed in Gagnon-Bartsch and Speed (2012) <doi:10.1093/nar/gkz433>, Gagnon-Bartsch, Jacob and Speed (2013), and Molania, et. al. (2019) <doi:10.1093/nar/gkz433>.  The algorithms require the user to specify a set of negative control variables, as described in the references.  The algorithms included in this package are 'RUV-2', 'RUV-4', 'RUV-inv', 'RUV-rinv', 'RUV-I', and RUV-III', along with various supporting algorithms.
-
-
 
 Current build status
 ====================
@@ -29,57 +27,51 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_r_base3.6target_platformlinux-64</td>
+              <td>linux_64_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.6target_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_r_base4.0target_platformlinux-64</td>
+              <td>linux_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=linux&configuration=linux_r_base4.0target_platformlinux-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_r_base3.6target_platformosx-64</td>
+              <td>osx_64_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.6target_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_r_base4.0target_platformosx-64</td>
+              <td>osx_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=osx&configuration=osx_r_base4.0target_platformosx-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_r_base3.6target_platformwin-64</td>
+              <td>win_64_r_base4.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=win&configuration=win_r_base3.6target_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_r_base4.0target_platformwin-64</td>
+              <td>win_64_r_base4.1</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=win&configuration=win_r_base4.0target_platformwin-64" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.1" alt="variant">
                 </a>
               </td>
             </tr>
           </tbody>
         </table>
       </details>
-    </td>
-  </tr>
-  <tr>
-    <td>Linux_ppc64le</td>
-    <td>
-      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
     </td>
   </tr>
 </table>
@@ -98,6 +90,7 @@ Installing `r-ruv` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-ruv` can be installed with:
@@ -168,9 +161,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers

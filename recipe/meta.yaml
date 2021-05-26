@@ -47,7 +47,7 @@ test:
 
 about:
   home: http://www-personal.umich.edu/~johanngb/ruv/
-  license: GPL-3
+  license: GPL-2.0-or-later
   summary: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt
     to adjust for systematic errors of unknown origin in high-dimensional data.  The
     algorithms were originally developed for use with genomic data, especially microarray
