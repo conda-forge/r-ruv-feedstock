@@ -3,6 +3,7 @@ About r-ruv-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ruv-feedstock/blob/main/LICENSE.txt)
 
+
 About r-ruv
 -----------
 
@@ -11,6 +12,7 @@ Home: http://www-personal.umich.edu/~johanngb/ruv/
 Package license: GPL-2.0-or-later
 
 Summary: Implements the 'RUV' (Remove Unwanted Variation) algorithms.  These algorithms attempt to adjust for systematic errors of unknown origin in high-dimensional data.  The algorithms were originally developed for use with genomic data, especially microarray data, but may be useful with other types of high-dimensional data as well.  These algorithms were proposed in Gagnon-Bartsch and Speed (2012) <doi:10.1093/nar/gkz433>, Gagnon-Bartsch, Jacob and Speed (2013), and Molania, et. al. (2019) <doi:10.1093/nar/gkz433>.  The algorithms require the user to specify a set of negative control variables, as described in the references.  The algorithms included in this package are 'RUV-2', 'RUV-4', 'RUV-inv', 'RUV-rinv', 'RUV-I', and RUV-III', along with various supporting algorithms.
+
 About r-ruv
 -----------
 
@@ -24,7 +26,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Travis</td>
+    <td>
+      <a href="https://app.travis-ci.com/conda-forge/r-ruv-feedstock">
+        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/r-ruv-feedstock/main.svg?label=Linux">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -49,6 +58,34 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.2</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_ppc64le_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1579&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ruv-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
